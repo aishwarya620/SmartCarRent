@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Book car"
+            android:textColor="@color/txtHeadColor"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Pick"/>
+
+            <EditText
+                android:id="@+id/etSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:hint="Enter source point"/>
+
+        </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <Button
+                 android:id="@+id/btnDestination"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="5dp"
+                 android:text="Pick"/>
+
+             <EditText
+                 android:id="@+id/etDestination"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:inputType="text"
+                 android:hint="Enter Destination point"/>
+
+         </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/etKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Destination in Km"/>
+
+        <TextView
+            android:id="@+id/Radiohead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etDestination"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Type"
+            android:textSize="22sp" />
+
+        <RadioGroup
+            android:id="@+id/radioType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <RadioButton
+                android:id="@+id/radioAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioType"
+                android:checked="true"
+                android:text="AC" />
+
+            <RadioButton
+                android:id="@+id/radioNonAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioAC"
+                android:text="NONAC" />
+        </RadioGroup>
+        <!--<TextView
+            android:id="@+id/SpinnerHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioType"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Select car model"
+            android:textSize="22sp" />-->
+       <!-- <Spinner
+
+            android:id="@+id/spinner"
+
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/SpinnerHead"
+            android:layout_height="wrap_content"
+
+            />-->
+
+
+
+
+        <EditText
+            android:id="@+id/etNumberofseats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:maxLength="10"
+            android:hint="Enter Number of seats"/>
+
+        <TextView
+            android:id="@+id/txtFinalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Amount  : "
+            android:layout_margin="10dp"
+            android:textSize="16sp"/>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/subLayout1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+
+
+        <Button
+            android:id="@+id/btnBookcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book car"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:visibility="gone"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />
+
+        </LinearLayout>
+
+             </LinearLayout>
+
+     </ScrollView>
+
+</LinearLayout>

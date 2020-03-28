@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/baseLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/pageHeadaddvehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Add Vehicle"
+            android:textColor="@color/txtHeadColor"
+            android:textSize="22sp" />
+    <RelativeLayout
+        android:id="@+id/subLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/pageHeadaddvehicle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vehicle_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_width="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vehicle"
+            app:civ_border_color="#FF0000"/>
+
+        <EditText
+            android:id="@+id/etVehiclenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/vehicle_image"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:maxLength="10"
+            android:hint="Enter vehicle number"/>
+        <!--<EditText
+            android:id="@+id/etVehiclename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etVehiclenumber"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:hint="Enter Vehicle name"/>-->
+        <EditText
+            android:id="@+id/etVehiclecolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etVehiclenumber"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:hint="Enter Vehicle color"/>
+        <EditText
+            android:id="@+id/etVehiclecompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etVehiclecolor"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:hint="Enter Vehicle company"/>
+        <RadioGroup
+            android:id="@+id/radioType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/etVehiclecompany"
+            android:text="Type"
+            >
+
+            <RadioButton
+                android:id="@+id/radioAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioType"
+                android:checked="true"
+                android:text="AC" />
+
+            <RadioButton
+                android:id="@+id/radioNonAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioAC"
+                android:text="NONAC" />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/etGSMnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioType"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:hint="Enter GSM number"/>
+        <EditText
+            android:id="@+id/etCurrentlocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etGSMnumber"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:hint="Enter Current location"/>
+
+        <EditText
+            android:id="@+id/etVehiclephoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCurrentlocation"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:hint="Upload vehicle photo"/>
+
+        <EditText
+            android:id="@+id/etCharges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etVehiclephoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:hint="Enter Charges"/>
+        <EditText
+            android:id="@+id/etNumberofseats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCharges"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:hint="Enter Number of seats"/>
+        <EditText
+            android:id="@+id/etSpeedlimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etNumberofseats"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:hint="Enter Speed limit"/>
+
+
+    </RelativeLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:id="@+id/subLayout1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/subLayout"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <Button
+                android:id="@+id/btnADD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/btnBackground"
+                android:textColor="@color/btnTextColor"
+                />
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/btnBackground"
+                android:textColor="@color/btnTextColor"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

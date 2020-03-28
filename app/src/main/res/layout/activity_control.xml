@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/baseLayout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/pageHeadcontrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Control"
+        android:textColor="@color/txtHeadColor"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageHeadcontrol"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"
+        android:text="AC"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/acSwitch"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:text="AC ON/Off   "
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--<RadioGroup
+        android:id="@+id/radioAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tvac"
+        android:text="ON" >
+
+        <RadioButton
+            android:id="@+id/radioON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioAC"
+            android:checked="true"
+            android:text="ON" />
+
+        <RadioButton
+            android:id="@+id/radioOFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioON"
+            android:text="OFF" />
+    </RadioGroup>-->
+
+    <!--<CheckBox
+        android:id="@+id/chkControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioAC"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/chk_control" />-->
+
+    <TextView
+        android:id="@+id/tvignition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkControl"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"
+        android:text="Ignition"
+        android:textSize="20sp" />
+
+
+    <!--<RadioGroup
+        android:id="@+id/radioIgnition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tvignition"
+        android:text="Ignition" >
+
+        <RadioButton
+            android:id="@+id/IgnitionON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioIgnition"
+            android:checked="true"
+            android:text="ON" />
+
+        <RadioButton
+            android:id="@+id/IgnitionOFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IgnitionON"
+            android:text="OFF" />
+    </RadioGroup>-->
+
+    <Switch
+        android:id="@+id/ignitionSwitch"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:text="Ignition ON/OFF   "
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/subLayout1"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="75dp"
+            android:visibility="gone"
+        android:background="@color/btnBackground"
+        android:textColor="@color/btnTextColor"
+        />
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />
+    </LinearLayout>
+
+</LinearLayout>

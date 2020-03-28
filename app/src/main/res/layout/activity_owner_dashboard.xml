@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/baseLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/imgHead"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/smartcar"
+            />
+        <TextView
+            android:id="@+id/txtHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgHead"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Smart Car Rent System"
+            android:textColor="@color/txtHeadColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnAddVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHead"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Add Vehicle"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />
+        <!--<Button
+            android:id="@+id/btnViewEditInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAddVehicle"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="View/Edit Status Information"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />-->
+        <Button
+            android:id="@+id/btnTrackCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAddVehicle"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Track Car"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />
+        <Button
+            android:id="@+id/btnControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnTrackCar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Control"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />
+       <!-- <Button
+            android:id="@+id/btnBillCharges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnControl"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Bill Charges"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />-->
+        <Button
+            android:id="@+id/btnViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnControl"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="View History"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />
+    </RelativeLayout>
+</ScrollView>

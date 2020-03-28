@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:id="@+id/scrollLayout"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:id="@+id/baseLayout"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView
+    android:id="@+id/imgHead"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="40dp"
+    android:src="@drawable/smartcar"
+    />
+
+    <TextView
+        android:id="@+id/txtHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgHead"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Smart Car Rent System"
+        android:textColor="@color/txtHeadColor"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/pageHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHead"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:textColor="@color/txtHeadColor"
+        android:textSize="22sp" />
+    <RelativeLayout
+        android:id="@+id/subLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/pageHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:hint="Enter Name"/>
+        <EditText
+            android:id="@+id/etEmail_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/etName"
+            android:inputType="textEmailAddress"
+            android:hint="Enter email_id"/>
+        <EditText
+            android:id="@+id/etPhone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/etEmail_id"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:hint="Enter Phone no"/>
+
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/etPhone_no"
+            android:inputType="textPassword"
+            android:hint="Enter Password"/>
+
+        <EditText
+            android:id="@+id/etCpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/et_Password"
+            android:inputType="textPassword"
+            android:hint="Enter Confirm Password"/>
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/etCpassword"
+            android:inputType="text"
+            android:hint="Enter City"/>
+
+        <EditText
+            android:id="@+id/etPincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/etCity"
+            android:inputType="number"
+            android:maxLength="6"
+            android:hint="Enter Pin code(Postal Code)"/>
+
+        <EditText
+            android:id="@+id/etWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/etPincode"
+            android:inputType="number"
+            android:hint="Enter Wallent Balance"/>
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/etWallet">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_male"
+                android:layout_below="@+id/radioSex"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioMale"
+                android:text="@string/radio_female" />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/etLicenceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/radioSex"
+            android:inputType="text"
+            android:hint="Enter Driving Licence Number"/>
+        <RadioGroup
+            android:id="@+id/radioTypeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/etLicenceNo"
+            >
+
+            <RadioButton
+                android:id="@+id/radioUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_user"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_owner" />
+        </RadioGroup>
+
+    </RelativeLayout>
+    <LinearLayout android:layout_height="wrap_content"
+        android:id="@+id/subLayout1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/subLayout"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />
+       <!-- <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/btnBackground"
+            android:textColor="@color/btnTextColor"
+            />-->
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtBacktosignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Already have?? Sign In Here."
+        android:textColor="@color/txtHeadColor"
+        android:textSize="20sp" />
+    </RelativeLayout>
+</ScrollView>
